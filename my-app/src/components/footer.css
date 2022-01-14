@@ -1,0 +1,28 @@
+
+address {
+    padding-top: 1.5rem;
+}
+
+.footer {
+    height: 20rem;
+    width: auto;
+    background-color: #D3DEDC;
+}
+
+
+.footer-content-centered, .footer-content-centered a {
+    text-align: center;
+    color: #7C99AC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer-title {
+    font-size: 2rem;
+    padding-top: 1.75rem;
+}
+
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
