@@ -1,0 +1,8 @@
+.Brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    flex: auto;
+    text-align: center;
+    margin: -15px auto;
+    color: #7C99AC;
+}
