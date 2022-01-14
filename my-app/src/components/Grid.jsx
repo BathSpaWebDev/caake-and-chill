@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./grid.css";
 
 export const GridContent = () => {
 
