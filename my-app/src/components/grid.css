@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gridBox {
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 180px;
+    height: 240px;
+    border-color: #7C99AC;
+    border-width: 2px;
+    border-style: solid;
+    margin: 5px 5px 5px 5px;
+    color: #3F4E64;
+}
+
+.collapseMargin {
+    margin-block-start: 0;
+    margin-block-end: 10px;
+    margin: auto 5px auto 5px;
+}
+.addMargin-top {
+    margin-block-start: 5px;
+}
+.genrePosition {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
