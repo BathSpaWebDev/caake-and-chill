@@ -1,15 +1,18 @@
 import React from "react";
 import { GridContent } from "./components/Grid";
 import { Header } from "./components/Header.jsx";
-
-// import "./App.css";
+import { NavBar } from "./components/NavBar";
+import "./App.css";
 
 
 const App = () => {
 
   return (
     <main>
-      <Header />
+      <NavBar  
+      title={"My Basket"} 
+      total={"0.00"}/>
+      
       <GridContent />
     </main>
 
