@@ -1,18 +1,36 @@
-.box{
+*{
     box-sizing: border-box;
+}
+.nav-grid{
     background-color: #92A9BD;
+    padding: 25px 0 5px 0;
     height: 200px;
-    padding: 25px;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-areas:
+        "l h c"
+        ". s .";
     justify-items: center;
     border: solid #7C99AC 5px;
 }
 
+.logo-grid{
+    grid-area: l;
+}
+
+.header-grid{
+    grid-area: h;
+}
+.cart-grid{
+    grid-area: c;
+}
+
+.search-grid{
+    grid-area: s;
+}
 .logo{
     display: flex;
     background-color: #D3DEDC;
-    height: 40px;
+    height: 100px;
     padding: 25px;
     border: solid #7C99AC 5px;
     border-radius: 25%;
@@ -21,12 +39,11 @@
 .cart-container{
     box-sizing: border-box;
     background-color: #D3DEDC;
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 175px;
     padding: 25px;
     border: solid #7C99AC 5px;
     border-radius: 25%;
-    margin: 10px;
 }
 
 .flex-box{
@@ -41,7 +58,10 @@
 }
 
 .search-field{
-    height: 10px;
+    height: 75%;
     width:100%;
     background-color: #FFEFEF;
+    border: solid #7C99AC 1px;
+    border-radius: 5%;
+    margin-bottom: 20px;
 }
