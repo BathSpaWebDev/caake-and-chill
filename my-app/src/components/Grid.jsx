@@ -23,14 +23,17 @@ const [moviesData, setMoviesData] = useState([]);
     return(
         <div className="container">
         {moviesData.map((data, index) => (
-          <div key={index}>
-            <h5>{data.movie}</h5>
-            <p>{data.year}</p>
-            <p>{data.price}</p>
-            <p>{data.stock}</p>
-            {data.genre.map((item, index) => (
-              <p key={index}>{item}</p>
-            ))}
+          <div className={"gridBox"} key={index}>
+            <h4 className={"collapseMargin"}>{data.movie}</h4>
+            <p className={"collapseMargin"}>Release Date: {data.year}</p>
+            <p className={"collapseMargin"}>Price: {data.price}</p>
+            <p className={"collapseMargin"}>Stock remaining: {data.stock}</p>
+            <div className={"genrePosition"}>
+              <h5 className={"collapseMargin addMargin-top"}>Genre</h5>
+              {data.genre.map((item, index) => (
+                <p className={"collapseMargin"} key={index}>{item}</p>
+              ))}
+            </div>
           </div>
         ))}
       </div>
