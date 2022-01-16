@@ -5,14 +5,15 @@ import "../components/navbar.css"
 
 export const CartIcon = () => {
     return(
-            <img className="cart-icon" src={cartIcon} alt="shopping cart"/>
+        <img className="logo-icons" src={cartIcon} alt="shopping cart"/>
     );
 }
+
 export const Logo = () => {
     return(
         <div className="logo">
-            <img src={moviesIcon} alt="movies icon"/>
-            <img src={cakeIcon} alt="cake icon"/>
+            <img className="logo-icons" src={moviesIcon} alt="movies icon"/>
+            <img className="logo-icons" src={cakeIcon} alt="cake icon"/>
         </div>
     );
 }
