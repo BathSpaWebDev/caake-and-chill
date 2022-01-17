@@ -1,67 +1,91 @@
 *{
     box-sizing: border-box;
 }
-.nav-grid{
+
+.navigation-container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     background-color: #92A9BD;
-    padding: 25px 0 5px 0;
-    height: 200px;
+    border: solid #7C99AC 1rem;
     display: grid;
-    grid-template-areas:
-        "l h c"
-        ". s .";
-    justify-items: center;
-    border: solid #7C99AC 5px;
+    grid-column-gap: 5px;
+
+}
+.header-position {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 25px;
+    margin: 0 0 0 50px;
 }
 
-.logo-grid{
-    grid-area: l;
-}
-
-.header-grid{
-    grid-area: h;
-}
-.cart-grid{
-    grid-area: c;
-}
-
-.search-grid{
-    grid-area: s;
-}
 .logo{
     display: flex;
     background-color: #D3DEDC;
-    height: 100px;
-    padding: 25px;
+    height: 50%;
+    width: 100%;
+    padding: 0.5%;
     border: solid #7C99AC 5px;
-    border-radius: 25%;
+    border-radius: 5%;
+    grid-row: 1;
+    grid-column: 1;
 }
 
 .cart-container{
-    box-sizing: border-box;
     background-color: #D3DEDC;
-    height: 100px;
-    width: 175px;
-    padding: 25px;
+    height: 50%;
+    width: 100%;
     border: solid #7C99AC 5px;
-    border-radius: 25%;
+    border-radius: 5%;
+    grid-row: 1;
+    grid-column: 4;
+    padding: 0 5px 0 5px;
 }
 
-.flex-box{
+
+.cart-box{
     display:flex;
-}
-.cart-icon{
-    height: 3rem;
+    justify-content: space-between;
 }
 
-.navigation-font{
-    font-size: 1rem;
+.icons-size{
+    height:100%;
+    width:50%;
 }
 
 .search-field{
-    height: 75%;
-    width:100%;
+    height: 100%;
     background-color: #FFEFEF;
     border: solid #7C99AC 1px;
-    border-radius: 5%;
+    border-radius: 1%;
     margin-bottom: 20px;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
+
+.text-visibility{
+    visibility: visible;
+}
+
+
+@media (max-width: 375px) {
+    .logo{
+        visibility: hidden;
+    }
+
+    .cart-container{
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo{
+        visibility: hidden;
+    }
+
+    .cart-container{
+        height: 100%;
+    }
+}
+

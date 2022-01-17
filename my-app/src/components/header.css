@@ -6,3 +6,12 @@
     margin: -15px auto;
     color: #FFEFEF;
 }
+
+@media (max-width: 500px) {
+    .Brand {
+        font-size: 25px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+}
+
