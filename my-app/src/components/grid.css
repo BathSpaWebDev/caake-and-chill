@@ -5,6 +5,7 @@
 }
 
 .gridBox {
+    position: relative;
     box-sizing: border-box;
     flex-direction: column;
     width: 180px;
@@ -14,6 +15,7 @@
     border-style: solid;
     margin: 5px 5px 5px 5px;
     color: #3F4E64;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .collapseMargin {
@@ -26,6 +28,20 @@
 }
 .genrePosition {
     display: flex;
+    box-sizing: border-box;
+    position: absolute;
     flex-direction: column;
     align-content: flex-end;
+    top: 163px;
+    left: 0;
+    width: 176px;
+    height: 73px;
+    border: 1px solid #92A9BD;
+}
+.spaceBelow {
+    margin-block-end: 10px;
+}
+
+.genreRow {
+    display: contents;
 }
