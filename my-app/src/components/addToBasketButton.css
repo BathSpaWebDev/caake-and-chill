@@ -1,0 +1,9 @@
+.buttonLayout {
+    margin: 15px 5px 5px 5px;
+}
+.buttonLayout:hover {
+    filter: brightness(.9);
+    background-color: #3f4e64;
+    color: #ffefef;
+    font-weight: bold;
+}

@@ -1,10 +1,12 @@
 .Brand {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+    font-family: 'Staatliches', cursive;
+    font-size: 85px;
+    letter-spacing: .5rem;
     flex: auto;
     text-align: center;
     margin: -15px auto;
     color: #FFEFEF;
+    text-shadow: 4px 5px 0 rgb(63, 78, 100);
 }
 
 @media (max-width: 500px) {

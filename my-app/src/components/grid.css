@@ -7,13 +7,20 @@
 .gridBox {
     box-sizing: border-box;
     flex-direction: column;
-    width: 180px;
-    height: 240px;
+    position: relative;
+    width: 230px;
+    height: 270px;
     border-color: #7C99AC;
     border-width: 2px;
     border-style: solid;
-    margin: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
     color: #3F4E64;
+    box-shadow: 0 4px 6px 0 rgb(146, 169, 189);
+    transition: all ease-in-out .2s;
+}
+.gridBox:hover {
+    filter: brightness(.75);
+    box-shadow: 0 7px 9px 0 rgb(63, 78, 100);
 }
 
 .collapseMargin {
@@ -26,6 +33,22 @@
 }
 .genrePosition {
     display: flex;
+    box-sizing: border-box;
+    position: absolute;
     flex-direction: column;
     align-content: flex-end;
+    top: 163px;
+    left: 0;
+    width: 226px;
+    height: 103px;
+    border: 1px solid #92A9BD;
+}
+.spaceBelow {
+    margin-block-end: 10px;
+}
+
+.genreRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
