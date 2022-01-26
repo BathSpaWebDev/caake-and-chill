@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./grid.css";
+import {AddButton} from "./Add-to-basket-button";
 
 export const GridContent = () => {
 
@@ -30,9 +31,12 @@ const [moviesData, setMoviesData] = useState([]);
             <p className={"collapseMargin"}>Stock remaining: {data.stock}</p>
             <div className={"genrePosition"}>
               <h5 className={"collapseMargin addMargin-top"}>Genre</h5>
-              {data.genre.map((item, index) => (
-                <p className={"collapseMargin genreRow"} key={index}>{item}, </p>
-              ))}
+                <div className="genreRow">
+                {data.genre.map((item, index) => (
+                  <p className="collapseMargin" key={index}>{item}, </p>
+                ))}
+                </div>
+            <AddButton className={"addToBasketButton"}/>
             </div>
           </div>
         ))}
