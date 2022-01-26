@@ -5,6 +5,7 @@
 }
 
 .gridBox {
+    position: relative;
     box-sizing: border-box;
     flex-direction: column;
     position: relative;

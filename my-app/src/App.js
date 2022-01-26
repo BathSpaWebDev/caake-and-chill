@@ -1,6 +1,5 @@
 import React from "react";
 import { GridContent } from "./components/Grid";
-import { Header } from "./components/Header.jsx";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import "./App.css";
